@@ -72,7 +72,7 @@ ul {
 .site-nav-list {
   display: flex;
   align-items: center;
-  margin-right: 344px;
+  margin-right: 318px;
 }
 .auth-nav-list {
   display: flex;
@@ -119,13 +119,30 @@ ul {
   padding: 32px 0;
 }
 .mail-link {
-  display: block;
-  margin-right: 50px;
+  display: flex;
+  margin-right: 30px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #757575;
+}
+.header-tel-link {
+  display: flex;
+}
+.mail-icon {
+  margin-right: 10px;
+}
+.mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--brand-color);
+}
+.tel-icon {
+  margin-right: 10px;
+}
+.tel-icon:hover,
+.tel-icon:focus {
+  fill: var(--brand-color);
 }
 /*HERO*/
 
@@ -135,6 +152,21 @@ ul {
   margin-left: auto;
   margin-right: auto;
   background: #2f303a;
+  
+}
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 1px solid black;
+    background-image: linear-gradient(
+        /* to right */
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/newphoto.jpg);
 }
 .hero-name {
   text-transform: uppercase;
@@ -194,6 +226,16 @@ ul {
 }
 .main-list:not(:last-child) {
   margin-right: 30px;
+}
+.container-our {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 .list-title {
   font-weight: 700;
@@ -274,6 +316,7 @@ ul {
   color: var(--text-color);
 }
 .comand-list-item {
+  margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -291,8 +334,88 @@ ul {
 .comand-list:nth-child(4n) {
   margin-right: 0;
 }
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.socials-item {
+ border-radius: 50%;
+ /* background-color: red; */
+}
+.socials-item:hover,
+.socials-item:hover {
+  background-color: #2196F3;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.socials-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: #AFB1B8;
+/* border-radius: 50%; */
+}
+.socials-icon:hover,
+.socials-icon:focus {
+  fill: #FFFFFF;
+}
+/* CLIENTS */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.clients-icon {
+  fill: #AFB1B8;
+}
+.clients-icon:hover {
+  fill: #2196F3;
+}
+.clients-item:hover {
+  fill: #2196F3;
+}
 /*FOOTER*/
 
+.page-footer {
+  background: #2f303a;
+  padding: 60px 0;
+  height: 252px;
+}
 .logo-footer {
   display: block;
   text-decoration: none;
@@ -303,10 +426,26 @@ ul {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
-.page-footer {
-  background: #2f303a;
-  padding: 60px 0;
-  height: 252px;
+
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
+.footer-icon {
+  
+  margin-left: 70px;
+}
+.block-text {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
 }
 .last-part-footer {
   font-family: "Raleway";
@@ -343,6 +482,22 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-socials-item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-socials-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: #FFFFFF;
+}
+.footer-socials-item:hover,
+.footer-socials-item:focus {
+  background-color: #2196F3;
+}
 /*PORTFOLIO*/
 
 .portfolio {
@@ -378,6 +533,7 @@ address {
   color: #ffffff;
   background: #2196f3;
 }
+
 /*OUR WORK*/
 .portfolio-list {
   display: flex;
